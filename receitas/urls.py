@@ -6,4 +6,5 @@ import receitas
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('receita', views.receita, name='receita')
 ]
