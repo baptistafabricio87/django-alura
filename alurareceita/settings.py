@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'alura_receita'),
         'USER': 'postgres',
         'PASSWORD': '123456',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
