@@ -7,7 +7,8 @@ def index(request):
         2:'Sorvete',
         3:'Sopa de Legumes',
         4:'Caldo Verde',
-        5:'Bolo de Chocolate'
+        5:'Bolo de Chocolate',
+        6:'Bolo de Cenoura'
     }
 
     dados = {
