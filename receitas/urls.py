@@ -1,10 +1,9 @@
 from django import urls
-from django.urls import include, path
+from django.urls import path
 
 from . import views
-import receitas
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('receita', views.receita, name='receita')
+    path('<int:receita_id>', views.receita, name='receita')
 ]
