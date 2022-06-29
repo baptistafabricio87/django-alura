@@ -8,22 +8,7 @@
         <img src="{% static 'img/core-img/hamburger.png' %}" alt="">
     </div>
 
-    <!-- Search Wrapper -->
-    <div class="search-wrapper">
-        <!-- Close Btn -->
-        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <form action="#" method="post">
-                        <input type="search" name="search" placeholder="O que está procurando...">
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include 'partials/search.html' %}
 
     {% include 'partials/header.html' %}
 
@@ -34,9 +19,9 @@
                     <div class="row">
                         <div class="col-12 col-lg-5">
                             <select name="select1" id="select1">
-                                <option value="1">Comida típica brasileira</option>
+                                {% comment %} <option value="1">Comida típica brasileira</option>
                                 <option value="1">Massas</option>
-                                <option value="1">Veganas</option>
+                                <option value="1">Veganas</option> {% endcomment %}
                             </select>
                         </div>
                         <div class="col-12 col-lg-2 text-right">
