@@ -9,7 +9,7 @@ class ListReceitas(admin.ModelAdmin):
     search_fields = ('nome_receita',)
     list_filter = ('categoria',)
     list_editable = ('publicar',)
-    list_per_page = 2
+    list_per_page = 4
     
 # Register your models here.
 admin.site.register(Receita, ListReceitas)
