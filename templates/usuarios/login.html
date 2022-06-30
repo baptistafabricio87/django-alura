@@ -25,6 +25,7 @@
             <div class="col-12">
                 <div class="contact-form-area">
                     <form action="{% url 'login' %} " method="POST">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-12 col-lg-12">
                             <label for="email"><b>Email</b></label>
@@ -32,7 +33,7 @@
                             </div>
                                 <div class="col-12 col-lg-12">
                                 <label for="senha"><b>Senha</b></label>
-                                <input id="senha" type="password" class="form-control" name="senha" placeholder="Digite aqui sua senha">
+                                <input id="senha" type="password" class="form-control" name="password" placeholder="Digite aqui sua senha">
                             </div>
                             <div class="col-12 text-center">
                                 <button class="btn btn-success" type="submit">Acessar sua conta</button>
@@ -49,9 +50,8 @@
 <script>
 function exibirCriarConta()
 {
-     location.href = "{% url 'cadastro' %}";
+    location.href = "{% url 'cadastro' %}";
 } 
 </script>
-
 {% include 'partials/_footer.html' %}
 {% endblock %}
