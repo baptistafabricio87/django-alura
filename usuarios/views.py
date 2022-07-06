@@ -2,7 +2,6 @@ from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
 from django.contrib import auth
 
-
 # Create your views here.
 def cadastro(request):
     if request.method == 'POST':
@@ -68,3 +67,7 @@ def dashboard(request):
 def logout(request):
     auth.logout(request)
     return redirect('index')
+
+
+def cria_receita(request):
+    return render(request, 'usuarios/cria_receita.html')
